@@ -47,7 +47,7 @@ public class InquiryCompleteAction extends ActionSupport {
 
 	public void setQtype(String Qtype){
 
-		this.qtype=qtype;
+		this.qtype = qtype;
 
 	}
 
