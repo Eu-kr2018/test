@@ -8,7 +8,7 @@ public class LoginDTO {
 
 	private String userName;
 
-	private boolean loginFlg=false;
+	private boolean loginFlg = false;
 
 	public String getLoginId(){
 		return loginId;
@@ -32,5 +32,13 @@ public class LoginDTO {
 
 	public void setUserName(String userName){
 		this.userName=userName;
+	}
+
+	public boolean getLoginFlg(){
+		return loginFlg;
+	}
+
+	public void setLoginFlg(boolean loginFlg){
+		this.loginFlg = loginFlg;
 	}
 }
