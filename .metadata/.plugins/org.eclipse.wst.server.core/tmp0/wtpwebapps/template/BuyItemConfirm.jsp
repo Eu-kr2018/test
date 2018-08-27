@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
- <%@ tablib prefix="s" uri="/struts-tags" %>
+<%@taglib prefix="s" uri="/struts-tags"%>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -38,8 +38,8 @@
 
 			#header{
 				width:100%;
-				height:500px;
-				text-align:center;
+				height:80px;
+				background-color:black;
 			}
 
 			#main{

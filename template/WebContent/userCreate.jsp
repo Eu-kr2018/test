@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ tablib prefix="s" uri="/struts-tags" %>
+<%@taglib prefix="s" uri="/struts-tags"%>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -67,14 +67,14 @@
 				<p>UserCreate</p>
 			</div>
 			<div>
-				<s:if test="errrorMessage !="">
+				<s:if test="errrorMessage !=">
 					<s:property value="errorMessage" escape="false"/>
 				</s:if>
 				<table>
 				<s:form action="UserCreateConfirmAction">
 					<tr>
 						<td>
-							<lable>ログインID:</lable>
+							<label>ログインID:</label>
 						</td>
 						<td>
 							<input type="text" name="loginUserId" value=""/>

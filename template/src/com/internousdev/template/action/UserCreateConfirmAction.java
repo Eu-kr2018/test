@@ -13,18 +13,15 @@ public class UserCreateConfirmAction extends ActionSupport implements SessionAwa
 	private String errorMessage;
 
 	public String execute(){
-
 		String result = SUCCESS;
-
-		//–¢“ü—Í€–Ú‚Ì—L–³‚ğ”»’è
 		if(!(loginUserId.equals(""))
-			&& !(loginPassword.equals(""))
-			&& !(userName.equals(""))){
+			&&!(loginPassword.equals(""))
+			&&!(userName.equals(""))){
 			session.put("loginUserId", loginUserId);
 			session.put("loginPassword", loginPassword);
 			session.put("userName", userName);
 		}else{
-			setErrorMessage("–¢“ü—Í‚Ì€–Ú‚ª‚ ‚è‚Ü‚·");
+			setErrorMessage("–¢“ü—Í‚Ì€–Ú‚ª‚ ‚è‚Ü‚·B");
 			result = ERROR;
 		}
 		return result;
@@ -54,11 +51,11 @@ public class UserCreateConfirmAction extends ActionSupport implements SessionAwa
 		this.userName = userName;
 	}
 
-	public  Map<String, Object> getSession(){
+	public Map<String, Object> getSession(){
 		return session;
 	}
 	@Override
-	public void setSession(Map<String, Object> session){
+	public void setSession(Map<String, Object>session){
 		this.session = session;
 	}
 
@@ -69,4 +66,5 @@ public class UserCreateConfirmAction extends ActionSupport implements SessionAwa
 	public void setErrorMessage(String errorMessage){
 		this.errorMessage = errorMessage;
 	}
+
 }

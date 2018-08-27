@@ -37,7 +37,7 @@
 
 			#header{
 				width:100%;
-				height:500px;
+				height:80px;
 				text-align:center;
 			}
 
@@ -102,8 +102,8 @@
 							<span>支払い方法</span>
 						</td>
 						<td>
-							<input type="radio" name="pay" value="1" ckecked="checked">現金支払い
-							<input type="radio" name="pay" value="2" ckecked="checked">ｸﾚｼﾞｯﾄｶｰﾄﾞ
+							<input type="radio" name="pay" value="1" checked="checked">現金支払い
+							<input type="radio" name="pay" value="2" checked="checked">ｸﾚｼﾞｯﾄｶｰﾄﾞ
 						</td>
 					</tr>
 					<tr>

@@ -21,6 +21,7 @@ public class BuyItemAction  extends ActionSupport implements SessionAware{
 		String payment;
 
 		if(pay.equals("1")){
+
 			payment = "åªã‡éxï•Ç¢";
 			session.put("pay", payment);
 		}else{
