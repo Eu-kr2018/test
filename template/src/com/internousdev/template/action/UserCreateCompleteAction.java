@@ -47,7 +47,7 @@ public class UserCreateCompleteAction extends ActionSupport implements SessionAw
 		this.userName = userName;
 	}
 
-	public Map<String, Object> getsession(){
+	public Map<String, Object> getSession(){
 		return session;
 	}
 
@@ -55,5 +55,4 @@ public class UserCreateCompleteAction extends ActionSupport implements SessionAw
 	public void setSession(Map<String,Object> session){
 		this.session = session;
 	}
-
 }
