@@ -1,8 +1,10 @@
 package com.internousdev.ecsite.action;
 
-import com.opensymphony.xwork2.ActionSupport;
-import org.apache.struts2.interceptor.SessionAware;
 import java.util.Map;
+
+import org.apache.struts2.interceptor.SessionAware;
+
+import com.opensymphony.xwork2.ActionSupport;
 
 
 public class BuyItemAction extends ActionSupport implements SessionAware{
@@ -20,10 +22,10 @@ public class BuyItemAction extends ActionSupport implements SessionAware{
 		String payment;
 
 		if(pay.equals("1")){
-			payment = "現金払い";
+			payment = "迴ｾ驥第髪謇輔＞";
 			session.put("pay", payment);
 		}else{
-			payment = "クレジットカード";
+			payment = "繧ｯ繝ｬ繧ｸ繝�繝医き繝ｼ繝画髪謇輔＞";
 			session.put("pay",payment);
 		}
 		return result;

@@ -1,12 +1,14 @@
 package com.internousdev.ecsite.action;
 
-import com.opensymphony.xwork2.ActionSupport;
-import org.apache.struts2.interceptor.SessionAware;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Map;
+
+import org.apache.struts2.interceptor.SessionAware;
+
 import com.internousdev.ecsite.dao.MyPageDAO;
 import com.internousdev.ecsite.dto.MyPageDTO;
+import com.opensymphony.xwork2.ActionSupport;
 
 public class MyPageAction extends ActionSupport implements SessionAware{
 
@@ -44,10 +46,10 @@ public class MyPageAction extends ActionSupport implements SessionAware{
 
 			myPageList = null;
 
-			setMessage("¤•iî•ñ‚ğ³‚µ‚­íœ‚µ‚Ü‚µ‚½B");
+			setMessage("å•†å“æƒ…å ±ã‚’æ­£ã—ãå‰Šé™¤ã—ã¾ã—ãŸã€‚");
 
 		}else if(res == 0 ){
-			setMessage("¤•iî•ñ‚Ìíœ‚É¸”s‚µ‚Ü‚µ‚½B");
+			setMessage("å•†å“æƒ…å ±ã®å‰Šé™¤ã«å¤±æ•—ã—ã¾ã—ãŸã€‚");
 		}
 	}
 
