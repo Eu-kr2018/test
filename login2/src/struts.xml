@@ -8,8 +8,8 @@
 	<constant name="struts.devMode" value="true"/>
 	<package name="com.internousdev.login2.action" extends="struts-default">
 		<action name="LoginAction" class="com.internousdev.login2.action.LoginAction" method="execute">
-			<result name="success">loginSuccess.jsp</result>
-			<result name="error">loginError.jsp</result>
+			<result name="success">loginSuccess2.jsp</result>
+			<result name="error">loginError2.jsp</result>
 		</action>
 	</package>
 </struts>
